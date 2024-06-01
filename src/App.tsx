@@ -110,6 +110,13 @@ const App = () => {
     console.log("Data: ", data);
     await fetchUser();
 
+    setToggleButton(false)
+    setUser({
+      id: 0,
+      name: "",
+      age: 0
+    })
+
     if (error) {
       console.log("Error: ", error);
     }    
